@@ -1,0 +1,3 @@
+[submodule "themes/hugo-community-theme"]
+	path = themes/hugo-community-theme
+	url = https://github.com/barkerd427/hugo-community-theme

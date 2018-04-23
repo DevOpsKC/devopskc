@@ -1,0 +1,34 @@
+language: go
+
+go:
+  - "1.10"
+
+git:
+  depth: 10
+
+branches:
+  only:
+    - master
+
+sudo: required
+
+dist: trusty
+
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
+
+script:
+  - /snap/bin/hugo
+  - ls -al public
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  repo: devopskc/devopskc.github.io
+  target-branch: master
+  keep-history: true
+  on:
+    branch: master

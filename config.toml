@@ -1,0 +1,459 @@
+# Site settings
+baseurl = "http://devopskc.com/"
+languageCode = "en-us"
+title = "DevOps Kansas City"
+theme = "hugo-community-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-99008998-2"
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "DevOps Kansas City"
+  description = "DevOps Kansas City Community"
+  # email = "your@email.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "DevOps KC"
+    # Optional logo stored in img/
+    logo = "logo.png"
+    resources = "Resources"
+    amenities = "Projects/Events"
+    about = "About"
+    board = "Board"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    [[menu.prepend]]
+      url = "http://meetup.devopskc.com"
+      name = "Meetup.com"
+      weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #   url = "http://gohugo.io"
+    #   name = "External link"
+    #   weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To Our Community!"
+    subtitle = "It's nice to meet you"
+    buttonText = "Learn about us"
+
+
+  # Resources section
+  [params.resources]
+    enable = true
+    title = "Resources"
+    subtitle = "Check out valuable resources you need to know."
+
+    [[params.resources.row]]
+
+    [[params.resources.row.list]]
+      icon = "fa-github"
+      title = "GitHub"
+      description = "Our GitHub organization."
+      url = "//github.com/devopskc"
+
+    [[params.resources.row.list]]
+      icon = "fa-twitter"
+      title = "DevOpsKC Twitter"
+      description = "Follow us on Twitter."
+      url = "//twitter.com/devopskc"
+
+    [[params.resources.row.list]]
+      icon = "fa-meetup"
+      title = "Meetup.com"
+      description = "Become a member of our Meetup group to attend our monthly meetings."
+      url = "//www.meetup.com/DevOps-Kansas-City/"
+
+    [[params.resources.row]]
+
+    [[params.resources.row.list]]
+      icon = "fa-youtube"
+      title = "YouTube"
+      description = "Subscribe to our YouTube channel to see our latest Meetups and stream them live."
+      url = "//youtube.com/c/devopskc"
+
+    [[params.resources.row.list]]
+      icon = "fa-amazon"
+      title = "Alexa Skill"
+      description = "Check out our Alexa Skill and help us improve it on GitHub."
+      url = "//www.amazon.com/gp/product/B01NAMGF98?ie=UTF8&ref-suffix=ss_rw"
+
+    [[params.resources.row.list]]
+      icon = "fa-twitter"
+      title = "DevOpsDaysKC Twitter"
+      description = "Follow our conference on Twitter."
+      url = "//twitter.com/devopsdayskc"
+
+  # Amenities section
+  [params.amenities]
+    enable = true
+    # All amenities defined in their own files. You can find example amenities
+    # at 'exampleSite/data/amenities'. Copy the 'amenities' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Projects/Events"
+    subtitle = "This is what we do."
+
+    [params.amenities.modal]
+      date = "Date"
+      category = "Category"
+      buttonText = "Close"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "Events Timeline"
+    subtitle = "Here you can find information about future and past events. Additional details can be seen in [Projects/Events](#amenities)"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "devopsdayskc.png"
+      date = "October 17th and 18th, 2018"
+      title = "DevOpsDays KC Conference"
+      description = "This is our awesome annual conference. [Speak!](//cfp.devopsdayskc.org) [Sponsor!](//sponsor.devopsdayskc.org) [Attend!](//register.devopsdayskc.org)"
+
+    [[params.about.events]]
+      img = "meeting.png"
+      date = "June 19th, 2018"
+      title = "Meetup"
+      description = "[Matt Stratton - Incidents and Accidents](https://www.meetup.com/DevOps-Kansas-City/events/248672736/)"
+
+    [[params.about.events]]
+      img = "meeting.png"
+      date = "May 15th, 2018"
+      title = "Meetup"
+      description = "[Build a webapp in docker and deploy it all in one night!](https://www.meetup.com/DevOps-Kansas-City/events/248433255/)"
+
+    [[params.about.events]]
+      img = "meeting.png"
+      date = "April 24th, 2018"
+      title = "Meetup"
+      description = "[Transforming a 150-year-old non-profit!](https://www.meetup.com/DevOps-Kansas-City/events/247998097/)"
+
+    [[params.about.events]]
+      img = "founding.png"
+      date = "April 1st, 2013"
+      title = "Founding"
+      description = "Aaron Blythe founded the organization on this date with the first Meetup."
+
+  # Board section
+  [params.board]
+    enable = true
+    # Possibility to center items
+    center = true
+    title = "Board of Directors"
+    subtitle = "We will strive for transparency by default. Check us out on [Slack](//devopskc.slack.com) or get an [invite](//slack.devopskc.com)"
+    description = "The Board of Directors is a group of volunteers."
+
+    # All board member's pictures are stored under 'static/img/board'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Aaron Blythe"
+      position = "Director"
+      # reportsTo = "CTO"
+      # livesIn = "[Munich, Germany](#some-maps-url)"
+      # scope = [
+      #   "UX for [member dashboard](#)",
+      #   "Maintainer for [awesome-project](#)",
+      #   "Open Source [community management](#)"
+      # ]
+      # For bio, markdown and even multiline strings are available.
+      bio = """Aaron is the founder and a Director."""
+      social = [
+        ["fa-twitter", "https://twitter.com/ablythe"],
+        ["fa-github", "https://github.com/aaronblythe"],
+        ["fa-linkedin", "https://www.linkedin.com/in/aaronblythe/"],
+        ["fa-envelope", "mailto:aaron@devopskc.com"],
+        ["fa-home", "http://aaronblythe.org/"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Dan Barker"
+      position = "Director"
+      bio = """Dan is a Director."""
+      social = [
+        ["fa-twitter", "https://twitter.com/barkerd427"],
+        ["fa-github", "https://github.com/barkerd427"],
+        ["fa-linkedin", "https://www.linkedin.com/in/dan-barker/"],
+        ["fa-envelope", "mailto:dan@devopskc.com"],
+        ["fa-home", "http://danbarker.codes/"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Ryan McNair"
+      position = "Director"
+      bio = """Ryan is a Director"""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "CJ Obermaier"
+      position = "Director"
+      bio = """CJ is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Chris Stein"
+      position = "Director"
+      bio = """Chris is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+      ]
+    
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Chase Pettet"
+      position = "Director"
+      bio = """Chase is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Dustin Holub"
+      position = "Director"
+      bio = """Dustin is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+    
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Jeff Stephens"
+      position = "Director"
+      bio = """Jeff is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Tom Martin"
+      position = "Director"
+      bio = """Tom is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Rebecca Sowers"
+      position = "Director"
+      bio = """Rebecca is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+    [[params.board.members]]
+      img = "logo.png"
+      name = "Bert Weidt"
+      position = "Director"
+      bio = """Bert is a Director."""
+      social = [
+        #["fa-twitter", "#"],
+        #["fa-facebook", "#"],
+        #["fa-linkedin", "#"]
+      ]
+
+  # Sponsor section
+    [params.sponsors_list]
+      # enable = true
+      # Possibility to center items
+      # center = true
+      # Optional sponsor title specifying the involvement
+      # title = "Used and trusted by"
+
+      # All the sponsors' logos are stored under 'static/img/logos'.
+      # Replace them with your sponsors' logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.sponsors]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.sponsors]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.sponsors]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.sponsors]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "We want to hear from you."
+    buttonText = "Send message"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "board@devopskc.com"
+
+    # Success and error message overwrite for async contact form
+    thanks = "Thank you for contacting us. Someone from the community will get back to you soon."
+    error = "Message could not be sent. Please contact us at board@devopskc.com instead."
+
+    [params.contact.captcha]
+      sitekey = "6Leq5FQUAAAAAEUtRizdwhLufI5Xl2Kooi3jD_7K"
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Name"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Email"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Phone"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Message"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-github"
+      title = "GitHub"
+      link = "//github.com/devopskc"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      title = "Twitter"
+      link = "//twitter.com/devopskc"
+
+    [[params.footer.social]]
+      icon = "fa-meetup"
+      title = "Meetup"
+      link = "//www.meetup.com/DevOps-Kansas-City/"
+
+    [[params.footer.social]]
+      icon = "fa-youtube"
+      title = "YouTube"
+      link = "//youtube.com/c/devopskc"
+
+    # [[params.footer.social]]
+    #   icon = "fa-facebook"
+    #   link = "https://www.facebook.com/falconridgekansas/"
+    #   title = "Facebook"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
