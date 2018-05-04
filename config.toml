@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://devopskc.com/"
+baseurl = "https://devopskc.com/"
 languageCode = "en-us"
 title = "DevOps Kansas City"
 theme = "hugo-community-theme"
