@@ -152,3 +152,68 @@ ul.social-buttons li a:active {
 body {
     webkit-tap-highlight-color: #3b73a7;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.navbar-brand>img {
+    height: 50px;
+    max-width: 250px;
+    margin: -12px 0 0 5px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@media(min-width:768px) {
+    .navbar-brand>img {
+        height: 75px;
+        max-width: 300px;
+        margin: -25px -40px;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
+    }
+    .navbar>div.container {
+        padding: 0 !important;
+    }
+}
+
+@media(min-width:992px) {
+    .navbar-brand>img {
+        height: 75px;
+        max-width: 400px;
+        margin: -25px;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
+    }
+}
