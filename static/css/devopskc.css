@@ -156,3 +156,9 @@ header {
 body {
     webkit-tap-highlight-color: #3b73a7;
 }
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding: 15px 10px 18px 10px;
+    }
+}
