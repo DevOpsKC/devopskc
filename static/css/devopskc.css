@@ -149,6 +149,10 @@ ul.social-buttons li a:active {
     background: #3b73a7;
 }
 
+header {
+    background-color: #141414;
+}
+
 body {
     webkit-tap-highlight-color: #3b73a7;
 }
