@@ -1,0 +1,219 @@
+.text-primary {
+    color: #3b73a7;
+}
+
+a {
+    color: #3b73a7;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #3b73a7;
+}
+
+.btn-primary {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #3b73a7;
+    color: #fff;
+    background-color: #3b73a7;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.btn-primary .badge {
+    color: #3b73a7;
+}
+
+.btn-xl {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.btn-xl .badge {
+    color: #3b73a7;
+}
+
+.navbar-default .navbar-brand {
+    color: #3b73a7;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #3b73a7;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #3b73a7;
+    background-color: #3b73a7;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #3b73a7;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    color: #3b73a7;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #3b73a7;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #3b73a7;
+}
+
+#amenities .amenities-item .amenities-link .amenities-hover {
+    background: #3b73a7;
+}
+
+.timeline>li .timeline-image {
+    background-color: #3b73a7;
+}
+
+section#contact .form-control:focus {
+    border-color: #3b73a7;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #3b73a7;
+}
+
+::-moz-selection {
+    background: #3b73a7;
+}
+
+::selection {
+    background: #3b73a7;
+}
+
+body {
+    webkit-tap-highlight-color: #3b73a7;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.navbar-brand>img {
+    height: 50px;
+    max-width: 250px;
+    margin: -12px 0 0 5px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@media(min-width:768px) {
+    .navbar-brand>img {
+        height: 75px;
+        max-width: 300px;
+        margin: -25px -40px;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
+    }
+    .navbar>div.container {
+        padding: 0 !important;
+    }
+}
+
+@media(min-width:992px) {
+    .navbar-brand>img {
+        height: 75px;
+        max-width: 400px;
+        margin: -25px;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
+    }
+}
