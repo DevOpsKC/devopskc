@@ -7,7 +7,7 @@
 1. Install [golang](golang)
 1. Install [Hugo](hugo)
 1. Clone repo with submodules `git clone --recurse-submodules https://github.com/DevOpsKC/devopskc.git`
-1. `hugo serve` to and navigate to the URL it gives, usually [localhost:1313](//localhost:1313)
+1. `hugo serve` and navigate to the URL it gives, usually [localhost:1313](//localhost:1313)
 
 Website is built with [Hugo](hugo) using the [Hugo Community Theme](//github.com/barkerd427/hugo-community-theme)based on the [original Bootstrap theme](//github.com/IronSummitMedia/startbootstrap-agency) by [David Miller](//github.com/davidtmiller).
 
