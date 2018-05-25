@@ -162,7 +162,7 @@ googleAnalytics = "UA-99008998-2"
       img = "devopsdayskc.png"
       date = "October 17th and 18th, 2018"
       title = "DevOpsDays KC Conference"
-      description = "This is our awesome annual conference. [Speak!](//cfp.devopsdayskc.org) [Sponsor!](//sponsor.devopsdayskc.org) [Attend!](//register.devopsdayskc.org)"
+      description = "This is our awesome annual conference. [Speak!](http://cfp.devopsdayskc.org) [Sponsor!](http://sponsor.devopsdayskc.org) [Attend!](http://register.devopsdayskc.org)"
 
     [[params.about.events]]
       img = "meeting.png"
@@ -194,7 +194,7 @@ googleAnalytics = "UA-99008998-2"
     # Possibility to center items
     center = true
     title = "Board of Directors"
-    subtitle = "We will strive for transparency by default. Check us out on [Slack](//devopskc.slack.com) or get an [invite](//slack.devopskc.com)"
+    subtitle = "We will strive for transparency by default. Check us out on [Slack](//devopskc.slack.com) or get an [invite](http://slack.devopskc.com)"
     description = "The Board of Directors is a group of volunteers."
 
     # All board member's pictures are stored under 'static/img/board'.
