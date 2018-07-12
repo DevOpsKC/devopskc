@@ -21,6 +21,10 @@ googleAnalytics = "UA-99008998-2"
   description = "DevOps Kansas City Community"
   # email = "your@email.com"
 
+  [params.mailchimp]
+    uuid = "e7e73f2d1ff464093eb91b4da"
+    lid = "474d9b2f7a"
+
   # Link custom assets relative to /static
   custom_css = ["css/devopskc.css"]
   custom_js  = []
